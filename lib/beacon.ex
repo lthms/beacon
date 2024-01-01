@@ -82,12 +82,12 @@ defmodule Beacon do
 
     @type t :: %State{
       started: boolean,
-      target: Beacon.target | (),
-      duration: integer | (),
-      period: integer | (),
-      periodic_callback: Beacon.callback | (),
-      term_callback: Beacon.callback | (),
-      cancel_callback: Beacon.callback | (),
+      target: Beacon.target | nil,
+      duration: integer | nil,
+      period: integer | nil,
+      periodic_callback: Beacon.callback | nil,
+      term_callback: Beacon.callback | nil,
+      cancel_callback: Beacon.callback | nil,
     }
 
     @spec new(Beacon.target) :: t

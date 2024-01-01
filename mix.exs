@@ -20,8 +20,8 @@ defmodule Beacon.Mixfile do
   def project do
     [
       app: :beacon,
-      version: "1.0.0",
-      elixir: "~> 1.4",
+      version: "1.1.0",
+      elixir: "~> 1.5",
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
       description: description(),
@@ -47,10 +47,10 @@ defmodule Beacon.Mixfile do
 
   defp deps do
     [
-      {:credo,       "~> 0.4",  only: :dev,  runtime: false},
+      {:credo,       "~> 0.8",  only: :dev,  runtime: false},
       {:dialyxir,    "~> 0.5",  only: :dev,  runtime: false},
-      {:ex_doc,      "~> 0.15", only: :dev,  runtime: false},
-      {:excoveralls, "~> 0.6",  only: :test, runtime: false},
+      {:ex_doc,      "~> 0.16", only: :dev,  runtime: false},
+      {:excoveralls, "~> 0.7",  only: :test, runtime: false},
     ]
   end
 
